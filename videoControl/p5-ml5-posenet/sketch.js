@@ -14,7 +14,7 @@ function setup() {
   video.hide();
   posenet = ml5.poseNet(video, modelLoaded);
   posenet.on("pose", gotPoses);
-  fill(100, 130, 190, 150);
+  fill(255, 0, 0);
 }
 
 function modelLoaded() {
@@ -47,7 +47,7 @@ function draw() {
     for (let i = 0; i < points.length; i++) {
       let px = points[i].position.x;
       let py = points[i].position.y;
-      ellipse(px, py, 20, 20);
+      ellipse(px, py, 5, 5);
       if (isConnected) {
         socket.emit("message", ["/pose/px/" + i, px / width]);
         socket.emit("message", ["/pose/py/" + i, py / height]);
