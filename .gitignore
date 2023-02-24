@@ -1,4 +1,3 @@
-VideoControl/content/
-VideoControl/node_modules/
-/production
+/content
+/node_modules
 
