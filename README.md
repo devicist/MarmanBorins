@@ -31,7 +31,6 @@ npm install
 This will install all the required packages for the program to work. It might take a couple of minutes. Once complete, all that's left to do is run the following command
 ```
 node bridge.js
-
 ```
 
 You should be greeted with some text "bridge.js running. Waiting for connection...
